@@ -48,7 +48,7 @@ def map_cves_to_commits(cve_df, commit_df, model, threshold=0.5):
     print(f"Number of commit embeddings: {len(commit_embeddings)}")
 
     mapped_data = []
-    seen_combinations = set()  # Track unique combinations
+    seen_combinations =set()  # Track unique combinations
 
     try:
         print("Computing cosine similarities between commits and CVEs...")
